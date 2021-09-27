@@ -41,6 +41,7 @@ module.exports = {
         VariableDeclarator: { arguments: 1 },
       },
     ],
+    'multiline-ternary': ['error', 'always-multiline'],
     'react-hooks/rules-of-hooks': 'error', // Проверяем правила хуков
     'react-hooks/exhaustive-deps': 'warn', // Проверяем зависимости эффекта
   },

@@ -7,9 +7,15 @@ import Postlist from './postsList'
 
 const Posts = () => {
   const posts = [
-    { id: 1, label: 'post 1' },
-    { id: 2, label: 'post 2' },
-    { id: 3, label: 'post 3' },
+    { id: 1, label: 'Тестирование возможностей Tailwindcss' },
+    {
+      id: 2,
+      label: 'Подключение компонента переключения Light Mode / Dark Mode',
+    },
+    {
+      id: 3,
+      label: 'Извлечение общих стилей (hover, botton, etc) в @layer components',
+    },
   ]
   const params = useParams()
   const location = useLocation()
@@ -19,17 +25,13 @@ const Posts = () => {
     : posts
   const postId = params.postId
 
-  return (
-    <>
-      {postId
+  return (postId
 ? (
-        <Post posts={posts} postId={postId} />
-      )
-: (
-        <Postlist posts={cropPosts} />
-      )}
-    </>
+    <Post posts={posts} postId={postId} />
   )
+: (
+    <Postlist posts={cropPosts} />
+  ))
 }
 
 export default Posts
