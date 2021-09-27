@@ -13,7 +13,9 @@ function App() {
     <div className="flex flex-col w-full h-screen p-6 bg-gray-200 dark:bg-gray-700 dark:text-white">
       <NavBar />
 
-      <h1 className="flex justify-center py-6 text-4xl dark:text-white">App</h1>
+      <h1 className="flex justify-center py-8 text-4xl font-medium dark:text-white">
+        App
+      </h1>
 
       <Switch>
         <Route exact path="/" component={Home} />
