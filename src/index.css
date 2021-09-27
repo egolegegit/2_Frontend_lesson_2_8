@@ -1,0 +1,9 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hover-link {
+    @apply rounded bg-opacity-10 hover:bg-gray-300 dark:hover:bg-gray-600;
+  }
+}
