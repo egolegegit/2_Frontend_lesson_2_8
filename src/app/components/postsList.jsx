@@ -10,7 +10,7 @@ const PostsList = ({ posts }) => {
           <Link
             key={post.id}
             to={`posts/${post.id}`}
-            className="p-2 hover-link"
+            className="p-3 hover-link"
           >
             <h3>{post.label}</h3>
           </Link>

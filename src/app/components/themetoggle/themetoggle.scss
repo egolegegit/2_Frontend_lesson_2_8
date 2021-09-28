@@ -33,6 +33,14 @@
   cursor: pointer;
   background: var(--foreground);
   transition: background var(--transition);
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 px;
+  }
 }
 
 .toggle::before {
@@ -59,21 +67,23 @@
   opacity: 0;
 }
 
-.toggle .icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  margin: 0 px;
-}
+// .toggle .icons {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   height: 100%;
+//   margin: 0 px;
+// }
 
 .toggle .icons svg {
   height: 20px;
   width: 20px;
   z-index: 0;
-  fill: var(--background);
+  g {
+    fill: var(--background);
+  }
 }
 
-.toggle .icons svg g {
-  fill: var(--background);
-}
+// .toggle .icons svg g {
+//   fill: var(--background);
+// }

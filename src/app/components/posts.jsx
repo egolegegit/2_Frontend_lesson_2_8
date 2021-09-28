@@ -10,10 +10,14 @@ const Posts = () => {
     { id: 1, label: 'Тестирование возможностей Tailwindcss' },
     {
       id: 2,
-      label: 'Подключение компонента переключения Light Mode / Dark Mode',
+      label: 'Настройка React + Tailwindcss + scss',
     },
     {
       id: 3,
+      label: 'Подключение компонента переключения Light Mode / Dark Mode',
+    },
+    {
+      id: 4,
       label: 'Извлечение общих стилей (hover, botton, etc) в @layer components',
     },
   ]
