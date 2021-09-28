@@ -7,3 +7,7 @@
     @apply rounded bg-opacity-10 hover:bg-gray-300 dark:hover:bg-gray-600;
   }
 }
+
+body {
+ @apply dark:text-green-200;
+}
