@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from './components/navBar'
-import Home from './components/Home'
+import Home from './components/home'
 
 function App() {
   return (
