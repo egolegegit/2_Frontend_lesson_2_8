@@ -1,12 +1,7 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from './components/navBar'
-import Dashboard from './components/dashboard'
-import Posts from './components/posts'
-import Login from './components/login'
-import Home from './components/home'
-import Stats from './components/stats'
-import NotFound from './components/not-found'
+import Home from './components/Home'
 
 function App() {
   return (
@@ -17,11 +12,7 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/dashboard/stats" component={Stats} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/login" component={Login} />
-        <Route path="/posts/:postId?" component={Posts} />
-        <Route path="/404" component={NotFound} />
+        <Route path="/auth" />
         <Redirect from="/admin" to="/dashboard" />
         <Redirect to="/404" />
       </Switch>
