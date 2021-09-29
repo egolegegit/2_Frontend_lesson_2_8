@@ -11,3 +11,7 @@
 body {
  @apply dark:text-green-200;
 }
+
+.navbar-link {
+  @apply flex items-center px-2 ml-4 hover-link
+}

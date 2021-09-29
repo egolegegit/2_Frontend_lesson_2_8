@@ -1,7 +1,6 @@
 import React from 'react'
 const SunIcon = () => {
   const title = 'Enable Light Mode'
-  // const title = props.title || 'ic wb sunny 24px'
   return (
     <svg
       height="20"
