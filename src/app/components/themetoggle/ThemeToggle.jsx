@@ -38,9 +38,7 @@ const ThemeToggle = () => {
   return (
     <label className="toggle-wrapper" htmlFor="toggle">
       <div className={`toggle ${isEnabled ? 'enabled' : 'disabled'}`}>
-        <span className="hidden">
-          {isEnabled ? 'Enable Light Mode' : 'Enable Dark Mode'}
-        </span>
+        <span className="hidden">{isEnabled ? 'Enable Light Mode' : 'Enable Dark Mode'}</span>
         <div className="icons">
           <SunIcon />
           <MoonIcon />
